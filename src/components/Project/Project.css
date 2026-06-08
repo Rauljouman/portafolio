@@ -1,0 +1,267 @@
+.project {
+  width: 100%;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: linear-gradient(135deg, var(--surface), var(--surface-low));
+  border: 1px solid var(--outline-light);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
+}
+
+/* Zona de imagen */
+.project-card__visual {
+  position: relative;
+  background:
+    radial-gradient(circle at top left, rgba(137, 206, 255, 0.12), transparent 35%),
+    linear-gradient(135deg, var(--surface-high), var(--surface-low));
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-card__visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+}
+
+.project-card__image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  border-radius: 12px;
+  background: #e5e9ee;
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.08);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.project-card:hover .project-card__image {
+  transform: translateY(-3px) scale(1.015);
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.42),
+    0 0 0 1px rgba(137, 206, 255, 0.18);
+}
+
+/* Contenido */
+.project-card__info {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.project-card__version {
+  color: var(--primary);
+  font-family: "Courier New", monospace;
+  font-size: 0.82rem;
+  margin-bottom: 10px;
+}
+
+.project-card__info h3 {
+  color: var(--text-main);
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  line-height: 1.25;
+  margin-bottom: 18px;
+}
+
+.project-card__description {
+  color: var(--text-soft);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 22px;
+}
+
+.project-card__features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+.project-card__features li {
+  position: relative;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding-left: 24px;
+}
+
+.project-card__features li::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  color: var(--primary);
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.project-card__techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-card__techs span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 5px 10px;
+  background: rgba(137, 206, 255, 0.1);
+  border: 1px solid rgba(137, 206, 255, 0.22);
+  border-radius: 4px;
+  color: var(--primary);
+  font-family: "Courier New", monospace;
+  font-size: 0.78rem;
+}
+
+.project-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.project-card__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 9px 16px;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.project-card__btn:hover {
+  transform: translateY(-1px);
+}
+
+.project-card__btn--primary {
+  background: var(--primary);
+  color: var(--primary-dark);
+  border: 1px solid var(--primary);
+}
+
+.project-card__btn--primary:hover {
+  background: var(--primary-hover);
+}
+
+.project-card__btn--secondary {
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--text-muted);
+}
+
+.project-card__btn--secondary:hover {
+  background: var(--surface-high);
+  border-color: var(--primary);
+}
+
+/* Escritorio */
+@media (min-width: 1000px) {
+  .project-card {
+    grid-template-columns: 1.05fr 0.95fr;
+    min-height: 520px;
+  }
+
+  .project-card__visual {
+    padding: 20px;
+  }
+
+  .project-card__image {
+    max-width: 820px;
+    max-height: 470px;
+  }
+
+  .project-card__info {
+    padding: 40px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 999px) {
+  .project-card__visual {
+    padding: 32px;
+  }
+
+  .project-card__image {
+    max-width: 720px;
+    max-height: 420px;
+  }
+}
+
+/* Móvil */
+@media (max-width: 600px) {
+  .project-card {
+    border-radius: 12px;
+  }
+
+  .project-card__visual {
+    padding: 20px;
+  }
+
+  .project-card__image {
+    max-height: 340px;
+    border-radius: 10px;
+  }
+
+  .project-card__info {
+    padding: 22px;
+  }
+
+  .project-card__actions {
+    flex-direction: column;
+  }
+
+  .project-card__btn {
+    width: 100%;
+  }
+}
+
+/* Móvil pequeño */
+@media (max-width: 420px) {
+  .project-card__visual {
+    padding: 16px;
+  }
+
+  .project-card__image {
+    max-height: 300px;
+  }
+
+  .project-card__description {
+    font-size: 0.95rem;
+  }
+
+  .project-card__features li {
+    font-size: 0.9rem;
+  }
+}
