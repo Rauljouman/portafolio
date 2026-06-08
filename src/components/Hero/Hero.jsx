@@ -4,8 +4,8 @@ function Hero() {
   return (
     <section className="hero" id="about">
       <div className="hero__content">
-        <p className="hero__eyebrow">
-          <span>▸</span> ./hello_world.sh
+        <p className="navbar__logo">
+          <span>▸</span> Portafolio.java
         </p>
 
         <h1>Raül Jouman</h1>
@@ -65,7 +65,7 @@ function Hero() {
             <span className="hero-terminal__class">Developer</span> {"{"}
           </p>
 
-          <p className="hero-terminal__indent">
+          <p className="hero-terminal__indent-1">
             <span className="hero-terminal__keyword">private String</span> role ={" "}
             <span className="hero-terminal__string">
               "Backend / Full Stack Junior"
@@ -73,7 +73,7 @@ function Hero() {
             ;
           </p>
 
-          <p className="hero-terminal__indent">
+          <p className="hero-terminal__indent-1">
             <span className="hero-terminal__keyword">private String[]</span> stack ={" "}
             {"{"}
             <span className="hero-terminal__string">"React"</span>,{" "}
@@ -86,25 +86,16 @@ function Hero() {
 
           <br />
 
-          <p className="hero-terminal__indent">
+          <p className="hero-terminal__indent-1">
             <span className="hero-terminal__keyword">public void</span>{" "}
             <span className="hero-terminal__method">build</span>() {"{"}
           </p>
 
-          <p className="hero-terminal__indent hero-terminal__indent--double">
-            createApplications();
-          </p>
+          <p className="hero-terminal__indent-2">createApplications();</p>
+          <p className="hero-terminal__indent-2">connectDatabases();</p>
+          <p className="hero-terminal__indent-2">improveCode();</p>
 
-          <p className="hero-terminal__indent hero-terminal__indent--double">
-            connectDatabases();
-          </p>
-
-          <p className="hero-terminal__indent hero-terminal__indent--double">
-            improveCode();
-          </p>
-
-          <p className="hero-terminal__indent">{"}"}</p>
-
+          <p className="hero-terminal__indent-1">{"}"}</p>
           <p>{"}"}</p>
 
           <br />

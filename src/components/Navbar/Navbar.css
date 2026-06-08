@@ -1,12 +1,10 @@
-/*NAVBAR*/
-
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 50;
-  background: rgba(12, 19, 36, 0.78);
+  background: rgba(12, 19, 36, 0.82);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--outline-light);
 }
@@ -26,7 +24,7 @@
   color: var(--primary);
   font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   font-family: "Courier New", monospace;
   white-space: nowrap;
 }
@@ -34,16 +32,37 @@
 .navbar__links {
   display: none;
   align-items: center;
-  gap: 18px;
+  gap: 20px;
 }
 
 .navbar__links a {
+  position: relative;
   color: var(--text-soft);
   font-size: 0.9rem;
   transition: color 0.2s ease;
 }
 
+.navbar__links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.2s ease;
+}
+
 .navbar__links a:hover {
+  color: var(--primary);
+}
+
+.navbar__links a:hover::after,
+.navbar__links a.navbar__link--active::after {
+  width: 100%;
+}
+
+.navbar__links a.navbar__link--active {
   color: var(--primary);
 }
 
@@ -55,15 +74,18 @@
   font-size: 0.75rem;
   font-family: "Courier New", monospace;
   letter-spacing: 0.05em;
-  transition: background 0.2s ease, border-color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .navbar__cv:hover {
-  background: var(--surface-high);
+  background: rgba(137, 206, 255, 0.1);
   border-color: var(--primary);
+  color: var(--primary);
 }
 
-/* Tablet / Desktop */
 @media (min-width: 900px) {
   .navbar__content {
     padding: 14px var(--desktop-padding);
