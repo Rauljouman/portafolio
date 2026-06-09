@@ -1,5 +1,4 @@
 import "./Project.css";
-import valosportImage from "../../assets/valosportfoto.png";
 
 function Project() {
   return (
@@ -12,7 +11,7 @@ function Project() {
       <article className="project-card">
         <div className="project-card__visual">
           <img
-            src={valosportImage}
+            src="/valosportfoto.png"
             alt="Captura de pantalla de Valosport CRM"
             className="project-card__image"
           />
