@@ -1,5 +1,5 @@
 import "./Project.css";
-import valosportImage from "../../assets/valosportFoto.png";
+import valosportImage from "../../assets/valosportfoto.png";
 
 function Project() {
   return (
