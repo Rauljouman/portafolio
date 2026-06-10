@@ -48,7 +48,7 @@ function Hero() {
         </div>
       </div>
 
-      <div className="hero-terminal hero-animate hero-animate--right">
+      <div className="hero-terminal fade-up fade-delay-2">
         <div className="hero-terminal__header">
           <div className="hero-terminal__controls">
             <span className="hero-terminal__dot hero-terminal__dot--red"></span>
