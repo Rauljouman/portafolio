@@ -2,13 +2,13 @@ import "./Project.css";
 
 function Project() {
   return (
-    <section className="project section" id="projects">
+    <section className="project section reveal" id="projects">
       <div className="section-heading">
         <h2>Proyecto Destacado</h2>
         <p>~/projects/valosport-crm</p>
       </div>
 
-      <article className="project-card">
+      <article className="project-card card-hover">
         <div className="project-card__visual">
           <img
             src="/valosportfoto.png"

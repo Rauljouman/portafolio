@@ -106,12 +106,33 @@
 /* Terminal */
 
 .hero-terminal {
+  position: relative;
   width: 100%;
   background: var(--surface);
   border: 1px solid var(--outline-light);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+}
+
+.hero-terminal::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 10px;
+  background: linear-gradient(
+    135deg,
+    rgba(137, 206, 255, 0.18),
+    transparent 38%,
+    rgba(137, 206, 255, 0.08)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.hero-terminal:hover::before {
+  opacity: 1;
 }
 
 .hero-terminal__header {
@@ -227,6 +248,47 @@
   100% {
     opacity: 0;
   }
+}
+
+@keyframes heroFadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes heroFadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hero-animate {
+  opacity: 0;
+  animation-duration: 0.9s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.hero-animate--left {
+  animation-name: heroFadeLeft;
+  animation-delay: 0.15s;
+}
+
+.hero-animate--right {
+  animation-name: heroFadeRight;
+  animation-delay: 0.3s;
 }
 
 /* Responsive */

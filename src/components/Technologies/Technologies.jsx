@@ -25,7 +25,7 @@ const technologyGroups = [
 
 function Technologies() {
   return (
-    <section className="technologies section" id="technologies">
+    <section className="technologies section reveal" id="technologies">
       <div className="section-heading">
         <h2>Stack Tecnológico</h2>
         <p>~/skills/current_stack</p>
@@ -33,7 +33,7 @@ function Technologies() {
 
       <div className="technologies__grid">
         {technologyGroups.map((group) => (
-          <article className="technology-card" key={group.title}>
+          <article className="technology-card card-hover" key={group.title}>
             <div className="technology-card__header">
               <span className="technology-card__icon">{group.icon}</span>
               <h3>{group.title}</h3>

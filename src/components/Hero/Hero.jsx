@@ -3,7 +3,7 @@ import "./Hero.css";
 function Hero() {
   return (
     <section className="hero" id="about">
-      <div className="hero__content">
+      <div className="hero__content hero-animate hero-animate--left">
         <p className="navbar__logo">
           <span>▸</span> Portafolio.java
         </p>
@@ -14,7 +14,7 @@ function Hero() {
 
         <p className="hero__description">
           Creo aplicaciones web, APIs y soluciones de gestión con tecnologías
-          como React, C#, .NET, Java, Spring Boot, Supabase, Firebase y bases de
+          como React, C#, .NET, Java, Spring Boot y bases de
           datos SQL/NoSQL. Me enfoco en construir proyectos funcionales, bien
           estructurados y orientados a resolver problemas reales.
         </p>
@@ -48,7 +48,7 @@ function Hero() {
         </div>
       </div>
 
-      <div className="hero-terminal">
+      <div className="hero-terminal hero-animate hero-animate--right">
         <div className="hero-terminal__header">
           <div className="hero-terminal__controls">
             <span className="hero-terminal__dot hero-terminal__dot--red"></span>

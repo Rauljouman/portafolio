@@ -2,11 +2,16 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Technologies from "./components/Technologies/Technologies";
 import Project from "./components/Project/Project";
-import ExperienceEducation from "./components/ExperienceEducation/ExperienceEducation";
+import Experience from "./components/Experience/Experience";
+import Education from "./components/Education/Education";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import useReveal from "./components/hooks/useReveal";
 
 function App() {
+
+  useReveal();
+  
   return (
     <>
       <Navbar />
@@ -15,7 +20,8 @@ function App() {
         <Hero />
         <Technologies />
         <Project />
-        <ExperienceEducation />
+        <Experience />
+        <Education />
         <Contact />
       </main>
 
