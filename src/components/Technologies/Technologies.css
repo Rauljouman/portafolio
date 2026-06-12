@@ -66,6 +66,24 @@
   white-space: nowrap;
 }
 
+.technologies-terminal-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 28px;
+}
+
+.technologies-terminal {
+  width: 100%;
+  max-width: 980px;
+}
+
+@media (max-width: 600px) {
+  .technologies-terminal {
+    max-width: 100%;
+  }
+}
+
 @media (min-width: 640px) {
   .technologies__grid {
     grid-template-columns: repeat(2, 1fr);

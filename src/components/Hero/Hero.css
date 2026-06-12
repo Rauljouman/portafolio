@@ -291,22 +291,31 @@
   animation-delay: 0.3s;
 }
 
+.hero--simple {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 /* Responsive */
 
 @media (min-width: 950px) {
   .hero {
-    max-width: 1420px;
+    width: 100%;
+    max-width: 1180px;
     margin: 0 auto;
-    grid-template-columns: minmax(480px, 640px) minmax(420px, 760px);
-    gap: 48px;
-    min-height: 500px;
+    min-height: 520px;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
-  .hero-terminal {
+  .hero__content {
     max-width: 760px;
-    justify-self: center;
   }
 }
 

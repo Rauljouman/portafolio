@@ -57,6 +57,7 @@ textarea {
 .app {
   min-height: 100vh;
   padding: 120px var(--mobile-padding) 40px;
+  width: 100%;
 }
 
 .app h1 {
@@ -64,7 +65,9 @@ textarea {
 }
 
 .section {
-  margin-top: 96px;
+  width: 100%;
+  max-width: 1180px;
+  margin: 96px auto 0;
 }
 
 .section-heading {
