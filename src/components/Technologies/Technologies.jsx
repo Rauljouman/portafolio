@@ -84,8 +84,6 @@ function Technologies() {
             <p className="hero-terminal__indent-1">{"}"}</p>
             <p>{"}"}</p>
 
-            <br />
-
             <p className="hero-terminal__cursor">
               <span className="hero-terminal__prompt">❯</span>
               <span className="hero-terminal__block"></span>
