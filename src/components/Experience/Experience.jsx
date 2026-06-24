@@ -27,7 +27,7 @@ const experiences = [
       "Participé en el desarrollo y mantenimiento de sitios web mediante un CMS propio, realizando tareas de optimización, testeo y mejora de la experiencia de usuario.",
     tasks: [
       "Desarrollo y mantenimiento de páginas web.",
-      "Maquetación y ajustes visuales con HTML, CSS y JavaScript.",
+      "Maquetación y ajustes visuales con PHP, HTML, CSS y JavaScript.",
       "Participación en tareas de optimización de rendimiento.",
       "Testeo de funcionalidades y revisión de errores.",
       "Uso de Git para control de versiones.",
