@@ -12,6 +12,7 @@ const navLinks = [
 
 function Navbar() {
   const [activeSection, setActiveSection] = useState("about");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,26 +40,56 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="navbar">
       <nav className="navbar__content">
-        <a href="#about" className="navbar__logo">
+        <a href="#about" className="navbar__logo" onClick={closeMenu}>
           Raül Jouman
         </a>
 
-        <div className="navbar__links">
+        <button
+          className="navbar__toggle"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Abrir menú"
+        >
+          {isMenuOpen ? "✕" : "☰"}
+        </button>
+
+        <div
+          className={`navbar__links ${
+            isMenuOpen ? "navbar__links--open" : ""
+          }`}
+        >
           {navLinks.map((link) => (
             <a
               key={link.id}
               href={`#${link.id}`}
+              onClick={closeMenu}
               className={activeSection === link.id ? "navbar__link--active" : ""}
             >
               {link.label}
             </a>
           ))}
+
+          <a
+            href="/cv-raul-jouman.pdf"
+            className="navbar__cv navbar__cv--mobile"
+            download
+            onClick={closeMenu}
+          >
+            Descargar CV
+          </a>
         </div>
 
-        <a href="/cv-raul-jouman.pdf" className="navbar__cv" download>
+        <a
+          href="/cv-raul-jouman.pdf"
+          className="navbar__cv navbar__cv--desktop"
+          download
+        >
           Descargar CV
         </a>
       </nav>
