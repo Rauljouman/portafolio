@@ -1,8 +1,9 @@
-import "./Hero.css";
+import "./Hero.css"; 
 
 function Hero() {
   return (
-    <section className="hero hero--simple" id="about">
+    <section className="hero" id="about">
+
       <div className="hero__content hero-animate hero-animate--left">
         <p className="hero__eyebrow">
           <span>▸</span> Portafolio.java
@@ -14,9 +15,9 @@ function Hero() {
 
         <p className="hero__description">
           Creo aplicaciones web, APIs y soluciones de gestión con tecnologías
-          con Spring Boot, .Net y React.
-          Me enfoco en construir proyectos funcionales, bien estructurados y
-          orientados a resolver problemas reales.
+          como Spring Boot, .NET y React. Me enfoco en construir proyectos
+          funcionales, bien estructurados y orientados a resolver problemas
+          reales.
         </p>
 
         <div className="hero__actions">
@@ -47,6 +48,15 @@ function Hero() {
           </a>
         </div>
       </div>
+
+      <div className="hero__photo-wrapper hero-animate hero-animate--right">
+        <img
+          src="/fotoYo.png"
+          alt="Raül Jouman"
+          className="hero__photo"
+        />
+      </div>
+
     </section>
   );
 }
