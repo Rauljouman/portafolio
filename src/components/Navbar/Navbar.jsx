@@ -48,7 +48,6 @@ function Navbar() {
     <header className="navbar">
       <nav className="navbar__content">
         <a href="#about" className="navbar__logo" onClick={closeMenu}>
-          Raül Jouman
         </a>
 
         <button

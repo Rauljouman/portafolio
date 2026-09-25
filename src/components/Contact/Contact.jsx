@@ -4,11 +4,10 @@ function Contact() {
   return (
     <section className="contact section reveal" id="contact">
       <div className="contact__header">
-        <h2>¿Hablamos?</h2>
+        <h2>¡Hablemos!</h2>
         <p>
           Estoy abierto a nuevas oportunidades como desarrollador junior,
-          especialmente en posiciones relacionadas con backend, full stack,
-          desarrollo web o soporte técnico orientado a entornos tecnológicos.
+          especialmente en posiciones relacionadas con backend o full stack.
         </p>
       </div>
 
@@ -34,7 +33,7 @@ function Contact() {
           />
 
           <div className="contact-form__group">
-            <label htmlFor="name">Nombre_</label>
+            <label htmlFor="name">Nombre</label>
             <input
               id="name"
               name="name"
@@ -50,13 +49,13 @@ function Contact() {
               id="email"
               name="email"
               type="email"
-              placeholder="tu@email.com"
+              placeholder="usuario@email.com"
               required
             />
           </div>
 
           <div className="contact-form__group">
-            <label htmlFor="subject">Asunto_</label>
+            <label htmlFor="subject">Asunto</label>
             <input
               id="subject"
               name="subject"
@@ -67,7 +66,7 @@ function Contact() {
           </div>
 
           <div className="contact-form__group">
-            <label htmlFor="message">Mensaje_</label>
+            <label htmlFor="message">Mensaje</label>
             <textarea
               id="message"
               name="message"

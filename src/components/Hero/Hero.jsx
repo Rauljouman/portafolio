@@ -10,11 +10,11 @@ function Hero() {
 
         <h1>Raül Jouman</h1>
 
-        <h2>Desarrollador Backend / Full Stack Junior</h2>
+        <h2>Desarrollador Backend</h2>
 
         <p className="hero__description">
           Creo aplicaciones web, APIs y soluciones de gestión con tecnologías
-          como React, C#, .NET, Java, Spring Boot y bases de datos SQL/NoSQL.
+          con Spring Boot, .Net y React.
           Me enfoco en construir proyectos funcionales, bien estructurados y
           orientados a resolver problemas reales.
         </p>
