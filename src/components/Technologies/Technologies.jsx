@@ -9,84 +9,83 @@ function Technologies() {
       </div>
 
       <div className="technologies-terminal-wrapper">
-        <div className="hero-terminal technologies-terminal card-hover">
-          <div className="hero-terminal__header">
-            <div className="hero-terminal__controls">
-              <span className="hero-terminal__dot hero-terminal__dot--red"></span>
-              <span className="hero-terminal__dot hero-terminal__dot--yellow"></span>
-              <span className="hero-terminal__dot hero-terminal__dot--blue"></span>
+        <div className="technologies-terminal card-hover">
+
+          <div className="technologies-terminal__header">
+            <div className="technologies-terminal__controls">
+              <span className="terminal-dot terminal-dot--red"></span>
+              <span className="terminal-dot terminal-dot--yellow"></span>
+              <span className="terminal-dot terminal-dot--green"></span>
             </div>
 
-            <span className="hero-terminal__title">
-              raul@dev-machine:~/tech-stack
+            <span className="technologies-terminal__title">
+              raul@dev-machine: ~/tech-stack
             </span>
           </div>
 
-          <div className="hero-terminal__body">
+          <div className="technologies-terminal__body">
             <p>
-              <span className="hero-terminal__keyword">public class</span>{" "}
-              <span className="hero-terminal__class">TechStack</span> {"{"}
+              <span className="terminal-keyword">public class</span>{" "}
+              <span className="terminal-class">TechStack</span> {"{"}
             </p>
 
-            <p className="hero-terminal__indent-1">
-              <span className="hero-terminal__keyword">private String[]</span>{" "}
+            <p className="indent-1">
+              <span className="terminal-keyword">private String[]</span>{" "}
               languages = {"{"}
-              <span className="hero-terminal__string">"JavaScript"</span>,{" "}
-              <span className="hero-terminal__string">"C#"</span>,{" "}
-              <span className="hero-terminal__string">"Java"</span>,{" "}
-              <span className="hero-terminal__string">"Python"</span>,{" "}
-              <span className="hero-terminal__string">"SQL"</span>
+              <span className="terminal-string">"C#"</span>,{" "}
+              <span className="terminal-string">"Java"</span>,{" "}
+              <span className="terminal-string">"Python"</span>,{" "}
+              <span className="terminal-string">"JavaScript"</span>,{" "}
+
               {"}"};
             </p>
 
-            <p className="hero-terminal__indent-1">
-              <span className="hero-terminal__keyword">private String[]</span>{" "}
+            <p className="indent-1">
+              <span className="terminal-keyword">private String[]</span>{" "}
               frameworks = {"{"}
-              <span className="hero-terminal__string">"React"</span>,{" "}
-              <span className="hero-terminal__string">".NET"</span>,{" "}
-              <span className="hero-terminal__string">"Spring Boot"</span>,{" "}
-              <span className="hero-terminal__string">"Node.js"</span>
+              <span className="terminal-string">"React"</span>,{" "}
+              <span className="terminal-string">".NET"</span>,{" "}
+              <span className="terminal-string">"Spring Boot"</span>
               {"}"};
             </p>
 
-            <p className="hero-terminal__indent-1">
-              <span className="hero-terminal__keyword">private String[]</span>{" "}
+            <p className="indent-1">
+              <span className="terminal-keyword">private String[]</span>{" "}
               databases = {"{"}
-              <span className="hero-terminal__string">"MySQL"</span>,{" "}
-              <span className="hero-terminal__string">"PostgreSQL"</span>,{" "}
-              <span className="hero-terminal__string">"Firebase"</span>,{" "}
-              <span className="hero-terminal__string">"Supabase"</span>
+              <span className="terminal-string">"MySQL"</span>,{" "}
+              <span className="terminal-string">"PostgreSQL"</span>,{" "}
+              <span className="terminal-string">"Firebase"</span>,{" "}
+              <span className="terminal-string">"Supabase"</span>
               {"}"};
             </p>
 
-            <p className="hero-terminal__indent-1">
-              <span className="hero-terminal__keyword">private String[]</span>{" "}
+            <p className="indent-1">
+              <span className="terminal-keyword">private String[]</span>{" "}
               tools = {"{"}
-              <span className="hero-terminal__string">"Git"</span>,{" "}
-              <span className="hero-terminal__string">"GitHub"</span>,{" "}
-              <span className="hero-terminal__string">"VS Code"</span>,{" "}
-              <span className="hero-terminal__string">"Postman"</span>,{" "}
-              <span className="hero-terminal__string">"Vercel"</span>
+              <span className="terminal-string">"Git"</span>,{" "}
+              <span className="terminal-string">"VS Code"</span>,{" "}
+              <span className="terminal-string">"Postman"</span>,{" "}
+              <span className="terminal-string">"Vercel"</span>
               {"}"};
             </p>
 
             <br />
 
-            <p className="hero-terminal__indent-1">
-              <span className="hero-terminal__keyword">public void</span>{" "}
-              <span className="hero-terminal__method">keepLearning</span>() {"{"}
+            <p className="indent-1">
+              <span className="terminal-keyword">public void</span>{" "}
+              <span className="terminal-method">keepLearning</span>() {"{"}
             </p>
 
-            <p className="hero-terminal__indent-2">practiceBackend();</p>
-            <p className="hero-terminal__indent-2">buildProjects();</p>
-            <p className="hero-terminal__indent-2">improveEveryDay();</p>
+            <p className="indent-2">practiceBackend();</p>
+            <p className="indent-2">buildProjects();</p>
+            <p className="indent-2">improveEveryDay();</p>
 
-            <p className="hero-terminal__indent-1">{"}"}</p>
+            <p className="indent-1">{"}"}</p>
             <p>{"}"}</p>
 
-            <p className="hero-terminal__cursor">
-              <span className="hero-terminal__prompt">❯</span>
-              <span className="hero-terminal__block"></span>
+            <p className="terminal-cursor">
+              <span className="terminal-prompt">❯</span>
+              <span className="terminal-block"></span>
             </p>
           </div>
         </div>
